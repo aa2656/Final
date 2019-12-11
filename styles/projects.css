@@ -1,0 +1,69 @@
+/*DEVELOPER: Andrew Amirov, IS117-005, Semester, Year */
+.flip-card {
+    background-color: transparent;
+    width: 30vw;
+    height: 27vw;
+    perspective: 1000px;
+    float: left;
+    margin-left: 12vw;
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    font-size: 2vw;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #5eaf13;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #ff2f69;
+    color: white;
+    transform: rotateY(180deg);
+}
+@media only screen and (max-width: 959px) {
+    section h1 { font-size: 135%; }
+    section h2, aside h2 { font-size: 120%; }
+}
+@media only screen and (max-width: 767px) {
+    .flip-card {
+        margin-left: 30vw;
+        width: 40vw;
+        height: 37vw;
+    }
+    h1{
+        padding-top:30%;!important;
+    }
+    canvas{
+        height:375vh;
+    }
+
+}
+@media only screen and (max-width: 479px) {
+    header{ font-size: 90%; }
+}

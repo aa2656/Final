@@ -1,4 +1,4 @@
-/* the styles for the elements */
+/*DEVELOPER: Andrew Amirov, IS117-005, Semester, Year */
 * {
 	margin: 0;
 	padding: 0;
@@ -7,7 +7,6 @@ html {
 }
 header{
 	background-color: #005028;
-
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 100%;
 	margin: 0 auto;
@@ -23,24 +22,40 @@ a:focus, a:hover {
 	background-color: #005d2e
 }
 .logo {
-	max-height: 50px;
-	padding: 0;
-	margin:0;
+	max-height: 55px;
+	margin-left: 15%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #333;
+}
+.card{
+	float:left;
+	width:100%;
+	max-width: 240px;
+	height:auto;
+	margin-left: 8vw;
+	margin-bottom: 5vh;
+}
+#pdf{
+	height:100vh;
+}
+#aboutme{
+	top:50%;
+}
+#contactForm{
+	text-align: left;
 }
 /* the styles for the navigation menu */
 #webcoderskull{
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 15%;
 	padding: 0 20px;
 	width: 100%;
 	text-align: center;
 }
 canvas{
-	height:250vh;
+	height:200vh;
 	background-color: #009a4e;
 }
 #webcoderskull h1{
@@ -115,7 +130,7 @@ main {
 #page-container {
 	 position: relative;
 	 min-height: 200vh;
- }
+}
 
 #content-wrap {
 	padding-bottom: 2.5rem;    /* Footer height */
@@ -146,10 +161,8 @@ main {
 @media only screen and (max-width: 767px) {
 	header img { float: none; }
 	header { text-align: center; }
-	#speakers {
-		-moz-column-count: 2;
-		-webkit-column-count: 2;
-		column-count: 2;
+	.logo{
+		margin:0;
 	}
 	#nav_menu {
 		display: none;

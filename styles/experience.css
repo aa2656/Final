@@ -1,0 +1,10 @@
+/*DEVELOPER: Andrew Amirov, IS117-005, Semester, Year */
+canvas{
+    height:90vh;!important;
+    background-color: #009a4e;
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    canvas{height:200vh}
+}

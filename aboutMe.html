@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- DEVELOPER: Andrew Amirov, IS117-005, Fall 2019 -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Amirov Portfolio</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aboutMe.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/background.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+</head>
+<header>
+
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li class="logo"><img class= "logo" src="images/logo.png" alt="logo"></li>
+            <li class="right"><a href="contact.html">Contacts</a></li>
+            <li class="right"><a href="projects.html">Projects</a></li>
+            <li class="right"><a href="experience.html">Experience</a>
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </li>
+            <li class="right"><a href="aboutMe.html">About Me</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+<div id="particles">
+    <div id="webcoderskull">
+        <h1 id="aboutme">About Me</h1>
+        <p>I am a sophomore at NJIT, and I am persuing a degree in Computer Science. Im interested in the fields of artificial intelligence, software development, and security.Hobbies that I enjoy are playing video games, creating programs to make my life easier, and playing ultimate frisbee. Some examples of my for fun programs can be found in <a href = "projects.html">Projects</a>. Some games that I play include, League of Legends, Counter Strike Global Offencive, Warframe, and Minecraft. I am also a part of NJIT's ultimate frisbee club, but I only play relationally. I am also persuing my interest in Artificial Intelligence. At the end of the current semester I will teach myself how to use TensorFlow 2. This is a well know and widely used tool to develop a Artificial Intelligence.</p>
+        </div>
+</div>
+</body>
+
+<footer id="footer">Copywrite &copy  2019, Andrew Amirov All rights reserved</footer>
+
+
+</html>
